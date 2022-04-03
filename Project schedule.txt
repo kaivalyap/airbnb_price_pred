@@ -1,0 +1,22 @@
+*PG-DBDA-Sept-2021*
+*Project execution Plan*
+
+1: Finalise Project team(max 2 in one group)
+2: Finalise Project title and dataset
+3: Create GIT repository for Project 
+	Add project.txt file to update steps you are following and 	also add work done by you.
+	Evaluation will be done only GIT repo.
+	Daily upload you project code and update project.txt .
+4: Project First evaluation Date=29-Nov-2021 (30 marks)
+	I. Understanding dataset and project objective - 5
+	II. Project Flow design - 10
+	III. Data cleaning - 15
+5: Project Mid evaluation  Date=29-Jan-2022 (50 marks)
+	I. Model building - 25
+	II. Visualization of project output - 15 Marks
+	III. User interface for input - 10 Marks
+6: Project Final evaluation - After CPT exam (20 marks)
+	I.  Deployment-5 Marks
+	II. Project report/Documentation-5 Marks
+	III.Project presentation(ppt) & Project explanation video-5 	Marks
+	IV. Project rapid fire sheet-5 Marks

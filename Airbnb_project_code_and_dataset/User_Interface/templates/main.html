@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Airbnb Price Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet"  href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ 
+	<h1 class="centAlign">Predict Airbnb Property Price</h1>
+	<div class="login">
+     <h3 class="desc"> Enter the following information about you Property</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form method="POST" action="/predict">
+    	
+    <label for="property_type">Property Type</label>
+			<select id="property_type" name="property_type" required>
+				<option value="">Select Property-type</option>
+				<option value="0">Apartment</option>
+				<option value="1">Bed & Breakfast</option>
+				<option value="2">Boat</option>
+				<option value="3">Boutique hotel</option>
+				<option value="4">Bungalow</option>
+				<option value="5">Cabin</option>
+				<option value="6">Camper/RV</option>
+				<option value="7">Casa particular</option>
+				<option value="8">Castle</option>
+				<option value="9">Cave</option>
+				<option value="10">Chalet</option>
+				<option value="11">Condominium</option>
+				<option value="12">Dorm</option>
+				<option value="13">Earth House</option>
+				<option value="14">Guest suite</option>
+				<option value="15">Guest house</option>
+				<option value="16">Hostel</option>
+				<option value="17">House</option>
+				<option value="18">Hut</option>
+				<option value="19">In-law</option>
+				<option value="20">Island</option>
+				<option value="21">Lighthouse</option>
+				<option value="22">Loft</option>
+				<option value="23">Other</option>
+				<option value="24">Parking Space</option>
+				<option value="25">Serviced Apartment</option>
+				<option value="26">Tent</option>
+				<option value="27">Time Share</option>
+				<option value="28">Tipi</option>
+				<option value="29">Townhouse</option>
+				<option value="30">Train</option>
+				<option value="31">Tree House</option>
+				<option value="32">Vacation home</option>
+				<option value="33">Villa</option>
+				<option value="34">Yurt</option>
+
+
+			</select>
+			<br>
+      		<label for="room_type">Room Type</label>
+			<select id="room_type" name="room_type" required>
+				<option value="">Select Room-type</option>
+				<option value="0">Entire Home / Apartment</option>
+				<option value="1">Private Room</option>
+				<option value="2">Shared Room</option>
+				
+			</select>
+			<br>
+			<label for="amenities">Amenities</label>
+			<input type="text" id="amenities" name="amenities" required>		
+			<br>
+			<label for="accommodates">No. of Accommodates</label>
+			<input type="number" id="accommodates" name="accommodates" required>
+			<br>
+			<label for="bathrooms">No. of bathrooms</label>
+			<input type="number" step="0.5" id="bathrooms" name="bathrooms" required>
+			<br>
+			<label for="bed_type">Bed Type</label>
+			<select id="bed_type" name="bed_type" required>
+				<option value="">Select Bed-type</option>
+				<option value="0">Airbed</option>
+				<option value="1">Couch</option>
+				<option value="2">Futon</option>
+				<option value="0">Pull-out Sofa</option>
+				<option value="1">Real Bed</option>				
+			</select>
+			<br>
+			<label for="cancellation_policy">Cancellation Policy</label>
+			<select id="cancellation_policy" name="cancellation_policy" required>
+				<option value="">Select Cancellation policy-type</option>
+				<option value="0">Flexible</option>
+				<option value="1">Moderate</option>
+				<option value="2">Strict</option>
+				<option value="3">Super-strict</option>
+				<option value="4">Ultra-strict</option>				
+			</select>
+			<br>
+			<label for="cleaning_fee">Is there cleaning Fee? </label>
+			<select id="cleaning_fee" name="cleaning_fee" required>
+				<option value="">Select </option>
+				<option value="0">Not Applicable</option>
+				<option value="1">Applicable</option>			
+			</select>
+			<br>
+			<label for="city">City</label>
+			<select id="city" name="city" required>
+				<option value="">Select City</option>
+				<option value="0">Boston</option>
+				<option value="1">Chicago</option>
+				<option value="2">Los Angeles</option>
+				<option value="3">New York City</option>
+				<option value="4">San Fransisco</option>		
+				<option value="4">Washington DC</option>			
+			</select>
+			<br>
+			<label for="host_has_profile_pic">Does the owner have profile pic? </label>
+			<select id="host_has_profile_pic" name="host_has_profile_pic" required>
+				<option value="">Select </option>
+				<option value="0">No</option>
+				<option value="1">Yes</option>			
+			</select>
+			<br>
+			<label for="host_identity_verified">Is host identity verified? </label>
+			<select id="host_identity_verified" name="host_identity_verified" required>
+				<option value="">Select </option>
+				<option value="0">No</option>
+				<option value="1">Yes</option>			
+			</select>
+			<br>
+			<label for="host_response_rate">Host Response Rate (%)</label>	
+			<input type="text" id="host_response_rate" name="host_response_rate" required> 	
+			<br>
+			
+			<label for="instant_bookable">Is the property instantly bookable?</label>	
+			<select id="host_identity_verified" name="host_identity_verified" required>
+				<option value="">Select </option>
+				<option value="0">No</option>
+				<option value="1">Yes</option>			
+			</select>
+			<br>
+			<label for="number_of_reviews">No. of reviews</label>	
+			<input type="text" id="number_of_reviews" name="number_of_reviews" required> 	
+			<br>
+			
+			<label for="review_scores_rating">Review Scores / Rating (%)</label>	
+			<input type="text" id="review_scores_rating" name="review_scores_rating" required> 	
+			<br>
+			
+			<label for="bedrooms">No. of bedrooms</label>	
+			<input type="text" id="bedrooms" name="bedrooms" required> 	
+			<br>
+
+			<label for="beds">No. of beds </label>	
+			<input type="text" id="beds" name="beds" required> 	
+			<br>
+			<label for="longitude">Longitude</label>	
+			<input type="text" id="longitude" name="longitude" required> 	
+			<br>
+			<label for="latitude">Latitude</label>	
+			<input type="text" id="longitude" name="latitude" required> 	
+			<br>
+
+        <button type="submit" class="btn">Predict</button>
+    </form>
+   <br>
+ 
+
+ </div>
+
+
+</body>
+</html>

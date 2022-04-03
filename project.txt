@@ -1,0 +1,91 @@
+Project objective:
+Airbnb is a multinational company which provides a platform for houses, villas, flat owners and hotels to put
+their properties on rent for tenants/tourists etc. The owners have to determine a rate/price for there properties.
+The data used for this project includes fields such as property type, room type, no. of bedrooms, bathrooms and 
+accomodates and also some information about the host such as date since hosting started, host response rate, is 
+host id verified etc. This project will create a model which will predict the price of the property based on a wide
+range of features to avoid overpricing or underpricing of the property by the owners. 
+
+Work done till 24/11/2021:
+
+	- Finalized project group of 2 members
+	- Finalized project idea, dataset
+	- Git repository created and updated
+
+	- Datasets considered till now:
+	  : Emotion recognition from facial expressions 
+	  : Income prediction using census data
+	  : Prediction of confirmation probability of Railway waiting list ticket
+	  : Music reccomendation system using spotify dataset
+
+	- Dataset finalized for project:
+	  : Airbnb data analysis and price prediction in 6 USA cities
+
+	- Resources used for searching project ideas and datasets:
+	  : kaggle.com
+	  : datasetsearch.research.google.com
+
+25,26,27/11/2021:
+
+	- Project flow design done
+	- Research and study on the internet to understand different ways of data cleaning
+	- Data cleaning process started
+
+28/11/2021:
+	- Filled missing data from the dataset including the columns ['bathrooms', 'bedrooms', 'beds']
+	- Transformed textual data to numerical
+	- Primary cleansing completed
+	- Cleaning date columns
+	- Remaining tasks: Handling the amenities column, cleaning host_response_rate, review_score_rating
+
+29/11/2021:
+	- Cleaned remaining columns : host_response_rate, review_score_rating
+	- Remaining tasks in data cleaning : Handling the amenities column
+
+16/12/2021:
+	- For handling the amenities column, which contained a set of amenities for each property, refered many examples on kaggle. Found some ways to convert it into useful data.
+	  Finally, converted the amenities column to numeric by calculating the number of amenities in a row.
+
+27/12/2021:
+	- The original file required some more cleaning (the columns host_has_profilepic and host_identity verified had 3 unique values but they should contain only 2 - 't' and 'f' 
+	  This was because they were encoded before filling missing values)
+	- Created new notebook for generating new cleaned csv file which is ready for visualizations.
+	  Seperate cleaning of the data was needed to generate csv file. This file should contain textual data instead of numerical.
+
+28/12/2021:
+	- Some additional cleaning for better visualization in PowerBI
+	- new .csv file generated for visualization
+	- Created price column from log price
+	- Tried some visualizations on maps in powerBI
+
+17/1/2022:
+	- model building started
+	- built a simple linear regression model for testing
+	- tried different algorithms and checked their efficiency
+
+30/1/2022:
+	- tried exporting pickle file
+	- created basic html webpage interface for checking functionality
+
+5/02/2022:
+	- improved the webpage design 
+	- checked different algorithms like decision tree, random forest, gradient boosting, xgboost, knn, svm
+	- selected random forest as its mae, mse were less
+	
+13/02/2022:
+	- fine tuning of randomforest model using its hyperparameters
+	- more cleaning to improve accuracy of the model
+	- created pickle file
+	- improved the webpage design using css
+	- updated user interface according to new changes
+
+15/02/2022:
+	- final changes done
+
+
+
+		
+
+
+
+
