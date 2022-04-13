@@ -67,7 +67,7 @@ Work done till 24/11/2021:
 	- tried exporting pickle file
 	- created basic html webpage interface for checking functionality
 
-5/02/2022:
+05/02/2022:
 	- improved the webpage design 
 	- checked different algorithms like decision tree, random forest, gradient boosting, xgboost, knn, svm
 	- selected random forest as its mae, mse were less
@@ -80,7 +80,56 @@ Work done till 24/11/2021:
 	- updated user interface according to new changes
 
 15/02/2022:
-	- final changes done
+	- some minor changes done such as improving the BI visuals, segregating the files etc.
+
+18,19/02/2022:
+	- reading about advanced data cleaning methods
+
+20/02/2022:
+	- reading about advanced feature selection techniques
+
+28/03/2022:
+	- data cleaning using different methods, using more columns than earlier in order to avoid 
+	  data loss and make use of maximum data available
+
+29/03/2022:
+	- feature selection and model building (in a better way than earlier)
+	- feature selection using correlation coefficient, anova etc.
+	- model building and hyperparameter tuning of random forest
+
+30/03/2022:
+	- started writing rapidfire sheet
+	- collected data for project report
+
+31/03/2022:
+	- worked on deployment of the project
+
+01/04/2022:
+	- worked on deployment of the project
+	- rapid fire sheet
+
+02/04/2022:
+	- worked on project report
+	- rough draft of project report ready
+
+03/04/2022:
+	- solved some issues in deployment
+	- rapid fire sheet
+
+05/04/2022:
+	- rapid fire sheet done
+
+12/04/2022:
+	- project report finalized
+	- project ppt started
+
+13/04/2022:
+	- project ppt done
+
+
+
+
+
 
 
 

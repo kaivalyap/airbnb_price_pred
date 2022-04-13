@@ -1,0 +1,21 @@
+simple linear
+
+ridge 
+
+lasso
+
+gradient boost:
+https://vitalflux.com/gradient-boosting-regression-python-examples/
+
+xgboost:
+https://machinelearningmastery.com/xgboost-for-regression/
+
+bagging
+https://machinelearningmastery.com/bagging-ensemble-with-python/
+
+
+
+xgboost hyperparameters reference:
+https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/
+https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
+https://towardsdatascience.com/xgboost-python-example-42777d01001e
